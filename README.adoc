@@ -2,3 +2,12 @@
 
 `fc` is a small command line utility that provides the weather **f**ore**c**ast for the next few hours.
 Data is sourced from https://weatherapi.com[WeatherAPI].
+
+=== tasks
+
+init::
+`task init` initialises the `.env` file with a dummy API_KEY variable.
+The dummy variable has a default value of "xxxx".
++
+In order to use `fc`, you must obtain an API Key from https://weatherapi.com, and paste it into the .env file.
+Be sure to replace the default "xxxx" with the correct value.

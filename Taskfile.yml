@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task -l
+    silent: true
+
+  init:
+    desc: generate dummy .env file to specify your API_KEY value
+    cmds:
+      - if ! test -f .env; then echo "API_KEY=xxxx" >.env; fi
