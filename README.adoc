@@ -1,0 +1,4 @@
+== fc
+
+`fc` is a small command line utility that provides the weather **f**ore**c**ast for the next few hours.
+Data is sourced from https://weatherapi.com[WeatherAPI].
