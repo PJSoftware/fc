@@ -12,3 +12,19 @@ tasks:
     desc: generate dummy .env file to specify your API_KEY value
     cmds:
       - if ! test -f .env; then echo "API_KEY=xxxx" >.env; fi
+
+  run:
+    desc: build and run forecast
+    cmds:
+      - go run .
+
+  build:
+    desc: build forecast (fc)
+    cmds:
+      - go build -o ./fc .
+
+  install:
+    desc: build forecast (fc) and install into path
+    cmds:
+      - task: build
+      - sudo mv ./fc /usr/local/bin
